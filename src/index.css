@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Newsreader', ui-serif, Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --bg: #faf9f6;
+    --fg: #1a1917;
+    --muted: #6d6a63;
+    --faint: #a5a19a;
+    --line: rgb(26 25 23 / 0.12);
+    --panel: rgb(255 255 255 / 0.55);
+    --accent: #7a5c2e;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --bg: #12110f;
+    --fg: #ecebe7;
+    --muted: #97938b;
+    --faint: #6a665f;
+    --line: rgb(236 235 231 / 0.13);
+    --panel: rgb(255 255 255 / 0.035);
+    --accent: #c9a96a;
+  }
+
+  * {
+    border-color: var(--line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@utility text-muted {
+  color: var(--muted);
+}
+
+@utility text-faint {
+  color: var(--faint);
+}
+
+@utility text-accent {
+  color: var(--accent);
+}
+
+@utility font-display {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+}
+
+/* Section number / label pairing used throughout the page. */
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+.link-underline:hover {
+  background-size: 0% 1px;
+}

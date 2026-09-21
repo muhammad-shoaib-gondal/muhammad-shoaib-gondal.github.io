@@ -1,193 +1,46 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muhammad Shoaib Gondal — Software Engineer</title>
-  <meta name="description" content="Software engineer and CS graduate student at Kansas State University. Backend systems, algorithms, and multi-agent AI." />
-  <link rel="canonical" href="https://muhammad-shoaib-gondal.github.io/" />
-  <meta property="og:title" content="Muhammad Shoaib Gondal — Software Engineer" />
-  <meta property="og:description" content="Selected work in multi-agent systems, full-stack products, and algorithms." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://muhammad-shoaib-gondal.github.io/assets/estatepermit-hero.png" />
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-  <header class="nav">
-    <a class="logo" href="./index.html">Shoaib</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a class="btn btn-lime" href="./resume.pdf">Resume</a></li>
-    </ul>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <main>
-    <section class="wrap hero">
-      <div class="hero-visual">
-        <img src="./assets/estatepermit-hero.png" alt="EstatePermit dashboard with five compliance agents and a cited report for a Manhattan, KS parcel" />
-      </div>
-      <div>
-        <p class="kicker">01 / Selected work</p>
-        <h1>EstatePermit</h1>
-        <p class="lede">Five AI agents read zoning, building, environmental, and utility rules in parallel — then emit a cited compliance report and permit package.</p>
-        <div class="metrics">
-          <span class="chip">5 agents</span>
-          <span class="chip">FastAPI + React</span>
-          <span class="chip">RAG</span>
-          <span class="chip">Human gates</span>
-        </div>
-        <div class="hero-actions">
-          <a class="btn btn-lime" href="./work/estatepermit.html">Read case study <span class="arrow" aria-hidden="true">→</span></a>
-          <a class="btn btn-ghost" href="https://github.com/muhammad-shoaib-gondal/permit_os">GitHub</a>
-        </div>
-      </div>
-    </section>
+    <title>Shoaib Gondal — Researcher & Engineer</title>
+    <meta
+      name="description"
+      content="Graduate researcher at Kansas State University working on formally verified software in Coq, and a software engineer building full-stack systems and AI agents."
+    />
+    <meta name="author" content="Muhammad Shoaib Gondal" />
+    <meta name="theme-color" content="#faf9f6" />
 
-    <section class="wrap" id="work">
-      <div class="section-head">
-        <h2>More work</h2>
-        <p>Product, systems, and algorithms</p>
-      </div>
-      <div class="work-list">
-        <a class="work-row" href="./work/kompai.html">
-          <span class="idx">02</span>
-          <span>
-            <div class="work-title">KompAI</div>
-            <div class="work-meta">No-code web builder · React 19 · HuggingFace LLMs · 2026</div>
-          </span>
-          <span class="work-go" aria-hidden="true">→</span>
-        </a>
-        <a class="work-row" href="./work/tvd.html">
-          <span class="idx">03</span>
-          <span>
-            <div class="work-title">TVD</div>
-            <div class="work-meta">Short-video platform · Node.js · PHP · MySQL · 2022–23</div>
-          </span>
-          <span class="work-go" aria-hidden="true">→</span>
-        </a>
-      </div>
-    </section>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shoaib Gondal — Researcher & Engineer" />
+    <meta
+      property="og:description"
+      content="Formal verification in Coq, full-stack systems, and multi-agent AI. MS in Computer Science at Kansas State University, graduating December 2027."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <section class="wrap" id="experience">
-      <div class="section-head">
-        <h2>Experience</h2>
-        <p>Industry, research, and teaching</p>
-      </div>
-      <div class="jobs">
-        <article class="job">
-          <div class="when">May 2026 — Present</div>
-          <div>
-            <h3>Graduate Research Assistant</h3>
-            <p class="org"><a href="https://www.koncordantlab.com/">Koncordant Lab</a>, Kansas State University</p>
-            <p>Formally verified reasoner in Coq with Dr. Hande McGinty and Dr. Atalay Mert Ileri — machine-checked proofs of mathematical and algorithmic correctness.</p>
-          </div>
-        </article>
-        <article class="job">
-          <div class="when">Aug 2025 — May 2026</div>
-          <div>
-            <h3>Graduate Teaching Assistant</h3>
-            <p class="org">Kansas State University</p>
-            <p>Taught Python and data structures to 50+ students: coaching, written feedback, and targeted help on weak spots.</p>
-          </div>
-        </article>
-        <article class="job">
-          <div class="when">Jul 2024 — Jan 2025</div>
-          <div>
-            <h3>AI Training Data Contractor</h3>
-            <p class="org"><a href="https://shipd.ai/">ShipD</a> · Remote</p>
-            <p>Designed 100+ LeetCode-style problems in TypeScript and Python for LLM training, with optimal solutions, edge-case tests, and complexity analysis.</p>
-          </div>
-        </article>
-        <article class="job">
-          <div class="when">Feb 2023 — Mar 2024</div>
-          <div>
-            <h3>Software Engineer</h3>
-            <p class="org">Qualitex Trading · Remote</p>
-            <p>Backend on a business-critical platform: PHP/Laravel, Node.js, SQL, and REST APIs across 5+ interconnected applications.</p>
-          </div>
-        </article>
-        <article class="job">
-          <div class="when">Aug 2022 — Nov 2022</div>
-          <div>
-            <h3>Automation (QA) Intern</h3>
-            <p class="org">VentureDive · Remote</p>
-            <p>JUnit functional and integration tests that shortened QA cycles in an Agile team.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,300&display=swap"
+      rel="stylesheet"
+    />
 
-    <section class="wrap" id="proof">
-      <div class="section-head">
-        <h2>Proof</h2>
-        <p>Competitive programming</p>
-      </div>
-      <div class="stats">
-        <div class="stat">
-          <b>1998</b>
-          <span><a href="https://leetcode.com/u/muhammad_shoaib_gondal/">LeetCode Knight</a> · top 3% globally, 800+ problems</span>
-        </div>
-        <div class="stat">
-          <b>1444</b>
-          <span><a href="https://codeforces.com/profile/shoaib.gondal">Codeforces Specialist</a> · 750+ problems</span>
-        </div>
-        <div class="stat">
-          <b>R2</b>
-          <span>Meta Hacker Cup 2022 &amp; 2023</span>
-        </div>
-        <div class="stat">
-          <b>Top 5%</b>
-          <span>Google Kick Start 2021 &amp; 2022</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap" id="about">
-      <div class="section-head">
-        <h2>About</h2>
-        <p>Manhattan, KS</p>
-      </div>
-      <div class="about-grid">
-        <div>
-          <p>I’m Muhammad Shoaib Gondal, a software engineer and MS Computer Science student at Kansas State University (GPA 4.0). I like systems that have to be correct: APIs, algorithms, and now machine-checked proofs.</p>
-          <p>Coursework includes analysis of algorithms, DBMS, formal language theory, and programming languages.</p>
-          <div class="contact-row">
-            <a class="btn btn-lime" href="mailto:gondalshoaib4444@gmail.com">Email</a>
-            <a class="btn btn-ghost" href="https://github.com/muhammad-shoaib-gondal/">GitHub</a>
-            <a class="btn btn-ghost" href="https://linkedin.com/in/muhammad--shoaib">LinkedIn</a>
-            <a class="btn btn-ghost" href="./resume.pdf">Resume PDF</a>
-          </div>
-        </div>
-        <div>
-          <p class="kicker" style="margin-top:0.2rem">Stack</p>
-          <div class="stack">
-            <span class="chip">Python</span>
-            <span class="chip">FastAPI</span>
-            <span class="chip">TypeScript</span>
-            <span class="chip">React</span>
-            <span class="chip">Node.js</span>
-            <span class="chip">PHP / Laravel</span>
-            <span class="chip">SQL</span>
-            <span class="chip">REST</span>
-            <span class="chip">Coq</span>
-            <span class="chip">C++</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <span>Muhammad Shoaib Gondal</span>
-    <span>Available for Summer 2027 SWE internships</span>
-  </footer>
-  <script src="./js/nav.js"></script>
-</body>
+    <script>
+      // Avoid a flash of the wrong theme.
+      try {
+        const stored = localStorage.getItem('theme')
+        const dark = stored
+          ? stored === 'dark'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.classList.toggle('dark', dark)
+      } catch (_) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
