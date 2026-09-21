@@ -17,7 +17,7 @@ export const profile = {
 }
 
 export const links = {
-  github: 'https://github.com/',
+  github: 'https://github.com/muhammad-shoaib-gondal',
   linkedin: 'https://www.linkedin.com/',
   resume: '/Shoaib_Gondal_Resume.pdf',
 }
